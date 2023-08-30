@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+
+   /* Primary colors */
+   --color-light-red: hsl(0, 100%, 67%);
+   --color-orangey-yellow: hsl(39, 100%, 56%);
+   --color-green-teal: hsl(166, 100%, 37%);
+   --color-cobalt-blue: hsl(234, 85%, 45%);
+
+   /* Gradients (background) */
+   --gradient-light-slate-blue: hsl(252, 100%, 67%);
+   --gradient-light-royal-blue: hsl(241, 81%, 54%);
+
+   /* Gradients (circle) */
+   --gradient-violet-blue: hsla(256, 72%, 46%, 1);
+   --gradient-persian-blue: hsla(241, 72%, 46%, 0);
+
+   /* Neutral colors */
+   --neutral-white: hsl(0, 0%, 100%);
+   --neutral-pale-blue: hsl(221, 100%, 96%);
+   --neutral-light-lavender: hsl(241, 100%, 89%);
+   --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+
+   /* Font Family */
+   --font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+.body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+}
+
+.container {
+   width: 500px;
+   height: 400px;
+   outline: 3px solid #000;
+   display: flex;
+}
+
+.score {
+   width: 50%;
+   height: 100%;
+   outline: 3px solid red;
+   background-image: linear-gradient(var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
+   border-radius: 25px;
+}
+
+.score__title {
+   text-align: center;
+   padding: 15px;
+   color: lightgray;
+   font-family: var(--font-family);
+   font-weight: 700;
+}
+
+.score__result {
+   margin: auto;
+   width: 50%;
+   height: 30%;
+   outline: 3px solid yellowgreen;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+}
+
+.texts {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.paragraph {
+   text-align: center;
+}
+
+.summary {
+   width: 50%;
+   height: 100%;
+   outline: 3px solid purple;
+}
+
+
+
+
+
+
+
+
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
