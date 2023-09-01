@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +10,116 @@
 </head>
 <body class="body">
 
-  <section class="container">
+  <!-- global container -->
+  <article class="global__container">
 
-    <div class="score">
+    <!-- cards container -->
+    <section class="cards__container">
 
-      <h2 class="score__title">Your Result</h2>
-      <div class="score__result">
-        <p class="score__number">76</p>
-        <p class="score__number2">of 100</p>
+      <!-- left container (blue) -->
+      <div class="blue__container">
+
+        <h2 class="score__title">Your Result</h2>
+
+        <!-- container with the scoring ball -->
+        <div class="ball__score__result">
+          <p class="score__number">76</p>
+          <p class="score__number2">of 100</p>
+        </div>
+
+        <!-- container with the texts under the ball -->
+        <div class="texts__container">
+          <p class="text">Great</p>
+          <p class="paragraph">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+
       </div>
 
-      <div class="texts">
-        <p class="text">Great</p>
-        <p class="paragraph">You scored higher than 65% of the people who have taken these tests.</p>
+      <!-- right container (summary - white) -->
+      <div class="summary__container">
+
+        <h2 class="summary__title">Summary</h2>
+
+        <!-- container with the four skills -->
+        <div class="skills__container">
+
+          <!-- individual drawer for each skill -->
+          <div class="skill__drawer bck__reaction">
+
+            <!-- icon and skill container -->
+            <div class="icon-skill__container">
+              <img src="assets/images/icon-reaction.svg" alt="icon-reaction" class="image">
+              <div class="skills__text text__reaction">Reaction</div>
+            </div>
+
+            <!-- container with the score -->
+            <div class="score__container">
+              <div class="skills__score"><span class="num">80</span> / 100</div>
+            </div>
+
+          </div>
+
+          <!-- individual drawer for each skill -->
+          <div class="skill__drawer bck__memory">
+
+            <!-- icon and skill container -->
+            <div class="icon-skill__container">
+              <img src="assets/images/icon-memory.svg" alt="icon-memory" class="image">
+              <div class="skills__text text__memory">Memory</div>
+            </div>
+
+            <!-- container with the score -->
+            <div class="score__container">
+              <div class="skills__score"><span class="num">92</span> / 100</div>
+            </div>
+          </div>
+
+          <!-- individual drawer for each skill -->
+          <div class="skill__drawer bck__verbal">
+
+            <!-- icon and skill container -->
+            <div class="icon-skill__container">
+              <img src="assets/images/icon-verbal.svg" alt="icon-verbal" class="image">
+              <div class="skills__text text__verbal">Verbal</div>
+            </div>
+
+            <!-- container with the score -->
+            <div class="score__container">
+              <div class="skills__score"><span class="num">61</span> / 100</div>
+            </div>
+          </div>
+
+          <!-- individual drawer for each skill -->
+          <div class="skill__drawer bck__visual">
+
+            <!-- icon and skill container -->
+            <div class="icon-skill__container">
+              <img src="assets/images/icon-visual.svg" alt="icon-visual" class="image">
+              <div class="skills__text text__visual">Visual</div>
+            </div>
+
+            <!-- container with the score -->
+            <div class="score__container">
+              <div class="skills__score"><span class="num">72</span> / 100</div>
+            </div>
+          </div>
+
+          <!-- continue button -->
+          <a href="#blank" class="cta__button">Continue</a>
+
+        </div>
+
       </div>
 
-    </div>
+    </section>
 
-    <div class="summary">
-      Summary
+    <!-- challenge attributions -->
+    <footer class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></p>
+      <p>Coded by <a href="https://github.com/AdrianArenilla" target="_blank">Adrián Arenilla</a></p>
+    </footer>
 
-      Reaction
-      80 / 100
+  </article>
 
-      Memory
-      92 / 100
-
-      Verbal
-      61 / 100
-
-      Visual
-      72 / 100
-
-      Continue
-    </div>
-
-  </section>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Adrián Arenilla</a>.
-  </div>
 </body>
 </html>
