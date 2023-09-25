@@ -38,12 +38,15 @@
 .global__container {
    display: flex;
    flex-direction: column;
+   align-items: center;
 }
 
 .cards__container {
    width: 500px;
    height: 350px;
    display: flex;
+   align-items: center;
+   justify-content: center;
    border-radius: 25px;
    box-shadow: 3px 3px 24px -8px var(--neutral-light-lavender);
 }
@@ -96,7 +99,6 @@
    flex-direction: column;
    align-items: center;
    padding: 20px;
-   width: 220px;
 }
 
 .text {
@@ -120,8 +122,7 @@
 .summary__container {
    width: 250px;
    color: var(--neutral-white);
-   display: flex;
-   justify-content: center;
+   padding-left: 25px;
 }
 
 .summary__title {
@@ -230,6 +231,7 @@
 /* --------------------- FOOTER (ATTRIBUTION) --------------------- */
 
 .attribution {
+   width: 100%;
    display: flex;
    justify-content: space-around;
    text-align: center;
@@ -243,19 +245,94 @@
    color: hsl(228, 45%, 44%);
 }
 
-/* --------------------- MOBILE ADAPTATION (500px) --------------------- */
+/* --------------------- MOBILE ADAPTATION --------------------- */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
+
+   .cards__container {
+      width: 400px;
+   }
+
+   .blue__container {
+      width: 200px;
+   }
+
+   .summary__container {
+      width: 200px;
+      padding-left: 10px;
+   }
+
+   .skills__container {
+      width: 180px;
+   }
+
+   .attribution {
+      font-size: 0.7rem;
+   }
+}
+
+@media screen and (max-width: 415px) {
+
+   .cards__container {
+      width: 350px;
+   }
+
+   .blue__container {
+      width: 175px;
+   }
+
+   .text {
+      font-size: 1.3rem;
+   }
+
+   .summary__container {
+      width: 175px;
+      padding-left: 10px;
+   }
+
+   .summary__title {
+      padding: 20px 0 35px 0;
+   }
+
+   .skills__container {
+      width: 155px;
+   }
+
+   .skill__drawer {
+      height: 35px;
+   }
+
+   .image {
+      width: 15px;
+   }
+
+   .skills__text {
+      font-size: 0.7rem;
+   }
+
+   .skills__score {
+      font-size: 0.7rem;
+   }
+
+   .attribution {
+      flex-direction: column;
+   }
+}
+
+
+
+@media screen and (max-width: 375px) {
 
    .global__container {
       width: 100%;
       position: absolute;
-      top: 0;
       left: 0;
+      top: 0;
    }
 
    .cards__container {
       width: 100%;
+      height: 100%;
       flex-direction: column;
       box-shadow: none;
    }
@@ -267,8 +344,12 @@
       flex-direction: column;
    }
 
+   .score__title {
+      font-size: 1.3rem;
+   }
+
    .texts__container {
-      width: 260px;
+      width: 300px;
    }
 
    .text {
@@ -281,20 +362,40 @@
 
    .summary__container {
       width: 100%;
+      margin-left: 50%;
+      margin-right: 38%;
    }
 
    .skills__container {
       width: 85%;
    }
 
+   .skill__drawer {
+      height: 40px;
+   }
+
+   .image {
+      width: 17px;
+   }
+
+   .skills__text {
+      font-size: .9rem;
+   }
+
+   .skills__score {
+      font-size: .9rem;
+   }
+
    .icon-skill__container {
       justify-content: start;
    }
 
+   .cta__button {
+      margin-bottom: 12px;
+   }
+
    .attribution {
       width: 100%;
-      position: absolute;
-      bottom: -350px;
       font-size: .7rem;
    }
 }
